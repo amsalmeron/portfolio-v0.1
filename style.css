@@ -72,7 +72,17 @@ section {
     width: 100%;
 }
 
-
+.heading {
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    font-size: 6rem;
+    -webkit-text-stroke: #666 .1rem;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
 
 header {
     position: fixed;
@@ -92,6 +102,10 @@ header .navbar a{
     font-size: 1.7rem;
     margin-left: 2rem;
     color: #444;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
 }
 
 #menu {
@@ -147,10 +161,84 @@ header .scroll-bar {
     padding-bottom: 1rem;
 }
 
+.about .row{
+    display: 3rem;
+    flex-wrap: wrap;
+}
 
+.about .row .title {
+    font-size: 3rem;
+    color: var(--pink);
+    padding: .5rem 0;
+}
 
+.about .row .progress-bar {
+    flex: 1 1 40rem;
+    padding: 1rem;
+}
 
+.about .row .progress-bar .progress{
+    padding: 1rem 0;
+}
 
+.about .row .progress-bar .progress h3{
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 2rem;
+}
+
+.about .row .progress-bar .progress .bar {
+    height: 1rem;
+    width: 100%;
+    border: .2rem solid var(--pink);
+    border-radius: 5rem;
+    margin: .5rem 0;
+}
+
+.about .row .progress-bar .progress .bar span {
+    display: block;
+    background: var(--pink);
+    border-radius: 5rem;
+    height: 100%;
+}
+
+.about .row .progress-bar .progress:nth-child(2) .bar span {
+    width: 95%;
+}
+.about .row .progress-bar .progress:nth-child(3) .bar span {
+    width: 85%;
+}
+.about .row .progress-bar .progress:nth-child(4) .bar span {
+    width: 65%;
+}
+
+.about .row .personal-info {
+    flex: 1 1 55em;
+    padding: 1rem;
+}
+
+.about .row .personal-info .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .row .personal-info .box-container .box{
+    padding: 1rem;
+}
+
+.about .row .personal-info .box-container .box h3 {
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.about .row .personal-info .box-container .box h3 span {
+    color: #999;
+    font-size: 1.7rem;
+
+}
 
 
 
@@ -215,6 +303,11 @@ header .scroll-bar {
     html {
         font-size: 50%;
     }
+
+    .heading {
+        font-size: 4.5rem;
+    }
+
     header .navbar{
         width: 70%;
     }
