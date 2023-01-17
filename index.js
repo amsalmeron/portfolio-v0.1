@@ -1,32 +1,20 @@
 let menu = document.querySelector('#menu')
 let navbar = document.querySelector('.navbar')
 let scrollBar = document.querySelector('.scroll-bar')
-// import { fetch } from "node-fetch";
-// const fetch = require('node-fetch');
 
-// Github API call
-// let githubData = async() => await fetch('https://api.github.com/users/amsalmeron')
-// .then((response) => {
-//     if (response.ok) {
-//         return response.json()
-//     }
-// })
-// .then(data => {
-//     displayGithubData(data)
-// }).catch((error) => error)
+const avatarURL = document.getElementById('avatarURL')
+const avatarBio = document.getElementById('avatarBio')
 
-// githubData()
+githubApiData();
 
-// let displayGithubData = (data) => {
-//     const image = data.avatar_url
-//     const name = data.login
-//     const bio = data.bio
-
-//     document.getElementById("main-avatar").src = image
-//     document.getElementById("my-name").innerHTML = name
-//     document.getElementById("my-bio").innerHTML = bio
-// }
-
+function githubApiData() {
+    fetch('https://api.github.com/users/amsalmeron')
+    .then(response => response.json())
+    .then(response => {
+        avatarBio.innerHTML = response.bio
+        avatarURL.setAttribute("src", response.avatar_url)
+    })
+}
 
 
 menu.addEventListener('click',() => {
