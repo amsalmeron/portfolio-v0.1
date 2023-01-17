@@ -137,7 +137,7 @@ header .scroll-bar {
 }
 
 .home .content .hello {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #444;
 }
 
@@ -155,10 +155,10 @@ header .scroll-bar {
 }
 
 .home .content p{
-    max-width: 50rem;
-    font-size: 2rem;
+    max-width: 65rem;
+    font-size: 2.5rem;
     color: #333;
-    padding-bottom: 1rem;
+    padding: 2rem;
     text-transform: none;
 }
 
