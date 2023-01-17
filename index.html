@@ -24,7 +24,9 @@
             <a href="#contact">contact</a>
         </nav>
 
-        <a href="#" class="btn">Download Resume</a>
+        <a href="images/Antonio_FastTrack.docx.pdf" class="btn" download="file">
+            Download Resume
+        </a>
         <div class="scroll-bar"></div>
     </header>
 
@@ -127,16 +129,19 @@
                 <h3 class="title">my experience</h3>
             
                 <div class="box">
-                    <h3>Twitter API</h3>
-                    <p>Cool CRUD API Twitter things</p>
+                    <h3>Signature Parking</h3>
+                    <h4>Valet</h4>
+                    <p>Ensured smooth service by prioritizing customer safety and wellbeing</p>
                 </div>
                 <div class="box">
-                    <h3>Waste No More</h3>
-                    <p>Ruby on Rails Application to track food expiration and prevent waste.</p>
+                    <h3>Brilliant Inc.</h3>
+                    <h4>Quality Assurance Internship</h4>
+                    <p>Certified quality grades were met conducting chemical tests on products</p>
                 </div>
                 <div class="box">
-                    <h3>Dude, Where's My City?</h3>
-                    <p>Find the perfect city for you based on income and interests.</p>
+                    <h3>Hyatt Centric Hotel and Masala Spice Restaurant</h3>
+                    <h4>Server</h4>
+                    <p>Built strong rapport with customers with a willingness to accommodate when available</p>
                 </div>
             </div>
         </div>
@@ -145,22 +150,91 @@
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <h1 class="heading">my portfolio</h1>
-
-        <div class="box-container">
-            <a href="#" class="box">
+        
+        <div class="project-container">
+            <div  class="project">
+                <div class="info">
+                    <h2>Waste No More</h2>
+                    <br>
+                    <p>
+                        Waste No More is an application that allows users to sign, input items from their fridge along with an expiration date and return suggested
+                        recipes. The recipe finder will prioritize soon to be expired food to make sure no food goes to waste. The goal of this application is to 
+                        bring awareness to food waste and help others become more concious to what is in their fridge. It is useful for people who have a hard time 
+                        keeping track of all the ingredients in their fridge or just want some extra creativity in the kitchen.
+                    </p>
+                    <br><br>
+                    <a href="https://github.com/amsalmeron/waste-no-more-fe">
+                        Github Repository
+                    </a>
+                </div>
                 <img src="images/waste-no-more.jpg" alt="waste no more homepage photo">
-                <div class="info">Waste No More</div>
-            </a>
+            </div>
 
-            <a href="#" class="box">
+            <div class="project">
+                <div class="info">
+                    <h2>Dude, How's My City?</h2>
+                    <br>
+                    
+                    <p>
+                        This is a cost of living comparison for individuals who are looking for a new home or explore new cities. It
+                        allows users to browse cities both nationally and internationally to get average scores in many categories based on average
+                        income per profession, puvlic transport and cost of living. The is also a feature that allows the user to compare cities to eachother 
+                        with the goal to find where they might find a good fit for their lifestyle.
+                    </p>
+                    <br><br>
+                    <a href="https://github.com/Dude-Hows-My-City">
+                        Github Repository
+                    </a>
+                </div>
                 <img src="images/dude-my-city.jpg" alt="dude how's my city search photo">
-                <div class="info">Dude, How's My City?</div>
-            </a>
+            </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
 
+        <h1 class="heading">contact me</h1>
 
+        <div class="row">
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>phone</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>subject</label>
+                </div>
+                <div class="inputBox">
+                    <textarea required name="" id="" cols="30" rows="10"></textarea>
+                    <label>message</label>
+                </div>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+            <div class="image" id="main-avatar">
+                <img src="images/Headshot copy.jpg" alt="">
+            </div>
+            <div id="my-name">
+                
+            </div>
+            <div id="my-bio">
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- Javascript File link-->
     <script src="script.js"></script>

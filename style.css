@@ -303,54 +303,108 @@ header .scroll-bar {
     background: #f9f9f9;
 }
 
-.portfolio .box-container {
+.portfolio .project-container .project {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.portfolio .box-container .box {
-    margin: 1rem;
-    height: 25rem;
-    flex: 1 1 30rem;
+.portfolio .project-container .project .info {
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.portfolio .project-container .project .info h2 {
+    text-align: center;
+    font-size: 35px;
+}
+.portfolio .project-container .project .info p,
+.portfolio .project-container .project .info a {
+    font-size: 20px;
+    text-transform: none;
+    text-indent: 2em;
+}
+
+.portfolio .project-container .project img {
+    width: 55%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+.contact .row {
+    display: flex;
     border-radius: .5rem;
-    border: .1rem solid rgba(0,0,0,.2);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     overflow: hidden;
-    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(0,0,0,.2);
 }
 
-.portfolio .box-container .box img {
+.contact .row form {
+    padding: 2rem;
+    flex: 1 1 40rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolio .box-container .box .info {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    background: rgba(255, 71, 87, .8);
-    color: #fff;
-    height: 100%;
+.contact .row form .inputBox {
+    position: relative;
+}
+
+.contact .row form .inputBox input,
+.contact .row form .inputBox textarea {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 3.5rem;
-}
-.portfolio .box-container .box:hover .info {
-    top: 0;
-}
-
-.portfolio .box-container .box:hover img {
-    transform: scale(1.2);
+    padding: .5rem 1rem;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    border: .1rem solid green;
+    text-transform: none;
+    resize: none;
 }
 
+.contact .row form .inputBox label {
+    position: absolute;
+    top: 2.1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: #666;
+}
 
+.contact .row form .inputBox input:invalid,
+.contact .row form .inputBox textarea:invalid {
+    border-color: rgba(0,0,0,.1);
+}
 
+.contact .row form .inputBox input:valid ~ label,
+.contact .row form .inputBox textarea:valid ~ label,
+.contact .row form .inputBox input:focus ~ label,
+.contact .row form .inputBox textarea:focus ~ label {
+    top: -.6rem;
+    left: 0;
+    color: var(--pink);
+    font-size: 1.3rem;
+}
+
+.contact .row form .btn:hover {
+    background: var(--pink);
+    cursor: pointer;
+}
 
 
 
@@ -415,6 +469,10 @@ header .scroll-bar {
 
     .home .content .name{
         font-size: 3.5rem;
+    }
+
+    .contact .row .image {
+        display: none;
     }
 }
 @media (max-width: 450px) {
