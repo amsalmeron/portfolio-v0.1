@@ -149,13 +149,14 @@ header .scroll-bar {
 }
 
 .home .content .name span{
-    color: var(--pink);
+    color: #f9f9f9;
+    background-color: var(--pink);
     font-weight: bolder;
     text-transform: uppercase;
 }
 
 .home .content p{
-    max-width: 65rem;
+    max-width: 75rem;
     font-size: 2.5rem;
     color: #333;
     padding: 2rem;
@@ -332,6 +333,7 @@ header .scroll-bar {
 
 .portfolio .project-container .project .info h2 {
     text-align: center;
+    color: var(--pink);
     font-size: 35px;
 }
 .portfolio .project-container .project .info p,
