@@ -149,8 +149,8 @@ header .scroll-bar {
 }
 
 .home .content .name span{
-    color: #f9f9f9;
-    background-color: var(--pink);
+    color: #ff4757;
+    font-size: 6.5rem;
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -172,53 +172,6 @@ header .scroll-bar {
     font-size: 3rem;
     color: var(--pink);
     padding: .5rem 0;
-}
-
-.about .row .progress-bar {
-    flex: 1 1 40rem;
-    padding: 1rem;
-}
-
-.about .row .progress-bar .progress{
-    padding: 1rem 0;
-}
-
-.about .row .progress-bar .progress h3{
-    display: flex;
-    justify-content: space-between;
-    color: #666;
-    font-size: 2rem;
-}
-
-.about .row .progress-bar .progress .bar {
-    height: 1rem;
-    width: 100%;
-    border: .2rem solid var(--pink);
-    border-radius: 5rem;
-    margin: .5rem 0;
-}
-
-.about .row .progress-bar .progress .bar span {
-    display: block;
-    background: var(--pink);
-    border-radius: 5rem;
-    height: 100%;
-}
-
-.about .row .progress-bar .progress:nth-child(2) .bar span {
-    width: 85%;
-}
-.about .row .progress-bar .progress:nth-child(3) .bar span {
-    width: 75%;
-}
-.about .row .progress-bar .progress:nth-child(4) .bar span {
-    width: 75%;
-}
-.about .row .progress-bar .progress:nth-child(5) .bar span {
-    width: 70%;
-}
-.about .row .progress-bar .progress:nth-child(6) .bar span {
-    width: 65%;
 }
 
 .about .row .personal-info {
@@ -348,6 +301,11 @@ header .scroll-bar {
     height: auto;
     margin: 5px;
     padding: 5px;
+}
+
+#twitter-logo {
+    height: 40rem;
+    width: 50rem;
 }
 
 
